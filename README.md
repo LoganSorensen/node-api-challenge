@@ -38,25 +38,35 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [X] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+    - Express is a framework for Node.js. It essentially behaves like React for the backend. It also comes with access to middleware, allowing developers to make their backend more robust.
 
-- [ ] Describe a Resource?
+- [X] Describe Middleware?
 
-- [ ] What can the API return to help clients know if a request was successful?
+    - Middleware is essentially an array of functions that we run on the backend. In fact, most of the code on the backend is actually middleware. Middleware can provide a variety of useful services, such as automatically logging requests, providing security and handling errors.
 
-- [ ] How can we partition our application into sub-applications?
+- [X] Describe a Resource?
+
+    - Everything in a REST API is a resource. Typically, each resource will have a single URI but can have a number of endpoints depending on how many methods are used.
+
+- [X] What can the API return to help clients know if a request was successful?
+
+    - When a request is successful, a code of 200 or 201 is typically returned, along with the data that was being accessed.
+
+- [X] How can we partition our application into sub-applications?
+
+    - Routers allow us to break up our application in to more manageable pieces. By doing this, we split up each resource and their respective routes and methods.
 
 ## Minimum Viable Product
 
-- [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
-- [ ] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
+- [X] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
+- [X] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
 
 Design and build the necessary endpoints to:
 
-- [ ] Perform CRUD operations on _projects_ and _actions_. When adding an action, make sure the `project_id` provided belongs to an existing `project`. If you try to add an action with an `id` of 3 and there is no project with that `id` the database will return an error.
-- [ ] Retrieve the list of actions for a project.
+- [X] Perform CRUD operations on _projects_ and _actions_. When adding an action, make sure the `project_id` provided belongs to an existing `project`. If you try to add an action with an `id` of 3 and there is no project with that `id` the database will return an error.
+- [X] Retrieve the list of actions for a project.
 
 Please read the following sections before implementing the Minimum Viable Product, they describe how the database is structured and the files and methods available for interacting with the data.
 
